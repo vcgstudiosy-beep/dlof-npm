@@ -1,5 +1,5 @@
 {
-  "name": "dlof",
+  "name": "@vcgstudiosy-beep/dlof",
   "version": "1.0.0",
   "description": "مكتبة وأداة سطر أوامر رسمية لصيغة DLoF (Document Loop Format): تحليل وإنشاء ملفات .dlof، حزم .dlofpkg و .dlofSeries، عارض HTML، ومشغّل حلقات تفاعلي.",
   "keywords": [
