@@ -1,0 +1,42 @@
+{
+  "name": "dlof",
+  "version": "1.0.0",
+  "description": "مكتبة وأداة سطر أوامر رسمية لصيغة DLoF (Document Loop Format): تحليل وإنشاء ملفات .dlof، حزم .dlofpkg و .dlofSeries، عارض HTML، ومشغّل حلقات تفاعلي.",
+  "keywords": [
+    "dlof",
+    "dlofpkg",
+    "dlofSeries",
+    "document-loop-format",
+    "xml",
+    "arabic",
+    "reader",
+    "player"
+  ],
+  "license": "MIT",
+  "author": "Droy",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dlof": "bin/dlof.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/test/run.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
