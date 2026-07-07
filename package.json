@@ -17,6 +17,8 @@
   "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "unpkg": "dist/dlof.browser.js",
+  "jsdelivr": "dist/dlof.browser.js",
   "bin": {
     "dlof": "bin/dlof.js"
   },
@@ -31,12 +33,16 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "prepublishOnly": "npm run build",
+    "build:browser": "esbuild src/browser.ts --bundle --platform=browser --format=iife --global-name=DLOF --outfile=dist/dlof.browser.js --target=es2020 --minify",
+    "prepublishOnly": "npm run build && npm run build:browser",
     "test": "node dist/test/run.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fflate": "^0.8.3"
+  },
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.4.0"
   }
 }
