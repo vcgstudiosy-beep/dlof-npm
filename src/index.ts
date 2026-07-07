@@ -14,3 +14,14 @@ export { resolveLoopChain, buildNavigationMap, LoopChainEntry } from "./loop/loo
 export { renderViewerHtml, ViewerOptions } from "./viewer/renderViewerHtml";
 export { renderPlayerHtml, PlayerOptions } from "./player/renderPlayerHtml";
 export { resolveTheme, ResolvedTheme } from "./viewer/theme";
+export {
+  BRAND_LIGHT,
+  BRAND_DARK,
+  DOMAIN_LABELS,
+  CONTENT_KIND_INFO,
+  domainLabel,
+  fileTypeInfo,
+  formatFileSize,
+  loopLogoSvg,
+  FileTypeInfo,
+} from "./viewer/brand";
